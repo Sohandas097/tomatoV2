@@ -11,7 +11,7 @@ import { ToastContainer } from 'react-toastify';
 const App = () => {
 
   // const url = "http://localhost:4000" //Backend url
-  const url = "https://tomatov2.onrender.com/" 
+  const url = "https://tomatov2.onrender.com" 
 
 
   return (
