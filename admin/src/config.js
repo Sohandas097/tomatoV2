@@ -1,4 +1,4 @@
 export const server = {
-    // current: "Prod",
-    current: "Dev",
+    current: "Prod",
+    // current: "Dev",
 }
