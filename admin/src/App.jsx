@@ -7,11 +7,14 @@ import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { server } from './config';
 
 const App = () => {
 
   // const url = "http://localhost:4000" //Backend url
-  const url = "https://tomatov2.onrender.com" 
+  // const url = "https://tomatov2.onrender.com" 
+
+  const url = server.current == "Dev" ? "http://localhost:4000":  "https://tomatov2.onrender.com";
 
 
   return (
