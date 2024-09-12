@@ -9,10 +9,11 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const placeOrder = async(req,res) =>{
 
     // const frontend_url = "http://localhost:5173";
-    const frontend_url = server.current == "Dev" ? "http://localhost:5173" : "https://tomatoadmin.vercel.app";
+    // const frontend_url = server.current == "Dev" ? "http://localhost:5173" : "https://tomatoadmin.vercel.app";
+    const frontend_url = server.current == "Dev" ? "http://localhost:5173" : "https://tomato-sohan.vercel.app/myorders";
 
-    console.log("Extra data", req)
-    console.log("Extra res", res)
+    // console.log("Extra data", req)
+    // console.log("Extra res", res)
     try {
         //creating new order
         const newOrder = new orderModel({
