@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const placeOrder = async(req,res) =>{
 
     // const frontend_url = "http://localhost:5173";
-    const frontend_url = server.current == "Dev" ? "http://localhost:5173" : "https://tomatoadmin.vercel.app/";
+    const frontend_url = server.current == "Dev" ? "http://localhost:5173" : "https://tomatoadmin.vercel.app";
 
     try {
         //creating new order
